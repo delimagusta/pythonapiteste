@@ -1,12 +1,4 @@
-# API - É um lugar para disponibilizar recursos e/ou funcionalidades
-# 1) Objetivo - Criar um api que disponibiliza a consulta, criação, edição e exclusão de livros.
-# 2) URL - localhost
-# 3) Endpoints:
-      # localhost/livros (GET)
-      # localhost/livros/id (GET)
-      # localhost/livros/id (PUT)
-      # localhost/livros/id (DELETE)
-# 4) Quais resursos - Livros
+# Isso é um estudo de API com Python
 
 from flask import Flask, jsonify, request
 
