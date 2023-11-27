@@ -27,17 +27,12 @@ livros = [
 def obter_livros():
   return jsonify(livros)
 
-#app.run(port=5000, host = 'localhost', debug = True)
-
 #Consultar(id)
-
 @app.route('/livros/<int:id>', methods=['GET'])
 def obter_livro_por_id(id):
   for livro in livros:
     if livro.get('id') == id:
       return jsonify(livro)
-
-
 
 #Editar
 @app.route('/livros/<int:id>', methods=['PUT'])
